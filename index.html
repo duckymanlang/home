@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>duckyman launcher</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Modern font: Inter from Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #181a1b;
+      --fg: #f6f7f9;
+      --accent: #38bdf8;
+      --card-bg: #23272a;
+      --card-hover: #31363c;
+      --shadow: 0 2px 12px rgba(0,0,0,.2);
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin: 2rem 0 1.5rem 0;
+      letter-spacing: -1px;
+      color: var(--accent);
+    }
+    .links-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      width: 100%;
+      max-width: 420px;
+      margin-bottom: 4rem;
+    }
+    .link-card {
+      background: var(--card-bg);
+      box-shadow: var(--shadow);
+      border-radius: 12px;
+      padding: 1.4rem 2rem;
+      display: flex;
+      align-items: center;
+      transition: background 0.18s;
+      text-decoration: none;
+      color: var(--fg);
+      font-size: 1.17rem;
+      font-weight: 600;
+      border: 2px solid transparent;
+    }
+    .link-card:hover, .link-card:focus {
+      background: var(--card-hover);
+      border-color: var(--accent);
+      color: var(--accent);
+      outline: none;
+    }
+    .link-card .arrow {
+      margin-left: auto;
+      font-size: 1.35rem;
+      opacity: 0.65;
+      transition: transform 0.18s;
+    }
+    .link-card:hover .arrow, .link-card:focus .arrow {
+      transform: translateX(6px);
+      opacity: 1;
+    }
+    @media (max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .links-container { max-width: 96vw; }
+      .link-card { padding: 1rem 1.2rem; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <h1>duckyman launcher</h1>
+  <div class="links-container">
+    <a class="link-card" href="https://duckymanlang.github.io/ultracool/" target="_blank" rel="noopener">
+      Astra <span class="arrow">&#8599;</span>
+    </a>
+    <a class="link-card" href="https://duckymanlang.github.io/ultra2/" target="_blank" rel="noopener">
+      Starlike(modded) <span class="arrow">&#8599;</span>
+    </a>
+    <a class="link-card" href="https://duckymanlang.github.io/ultra3/" target="_blank" rel="noopener">
+      DragonX V4 (hacked) <span class="arrow">&#8599;</span>
+    </a>
+    <a class="link-card" href="https://duckymanlang.github.io/ultra4/" target="_blank" rel="noopener">
+      Shadow Client  <span class="arrow">&#8599;</span>
+    </a>
+  </div>
+</body>
+</html>
